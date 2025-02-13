@@ -1,0 +1,65 @@
+/* Collage Page Styling */
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.collage-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.collage-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    align-content:center;
+    color: white;
+    text-shadow: 0 0 10px magenta;
+    margin-bottom: 20px;
+}
+
+/* Collage Grid */
+.collage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.collage-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px magenta;
+    transition: transform 0.3s ease-in-out;
+}
+
+.collage-grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px magenta;
+}
+
+/* Back Button */
+.back-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: magenta;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px magenta;
+    transition: all 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+    background-color: white;
+    color: magenta;
+    box-shadow: 0 0 20px white;
+    transform: scale(1.1);
+}
